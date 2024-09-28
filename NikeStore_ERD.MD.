@@ -1,0 +1,7 @@
+'''mermaid 
+erDiagram
+product }|..|{ Inventory: contains
+Customer ||--o{ product: buys
+Sales ||--o{ Inventory :recorded
+Sales||--o{ Customer:from
+Sales||--o{ product: of 
