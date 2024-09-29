@@ -1,7 +1,18 @@
-'''mermaid 
+'''mermaid
 erDiagram
+product {int product_id pk
+string product_name pk
+string product_desc pk
+}
+Customer {int customer_id pk
+}
+Sales {int Sales_id pk
+}
+Inventory {int product_id fk
+ int product_quantity pk      
+}
 product }|..|{ Inventory: contains
 Customer ||--o{ product: buys
 Sales ||--o{ Inventory :recorded
 Sales||--o{ Customer:from
-Sales||--o{ product: of 
+Sales||--o{ product:of
